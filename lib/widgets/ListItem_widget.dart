@@ -2,8 +2,9 @@ import 'package:flutter/material.dart';
 
 class ListItem extends StatelessWidget {
   final String text;
+  final double sizefont;
 
-  const ListItem({Key? key, required this.text}) : super(key: key);
+  const ListItem({super.key, required this.text, required this.sizefont});
 
   @override
   Widget build(BuildContext context) {
@@ -16,15 +17,15 @@ class ListItem extends StatelessWidget {
             width: 15,
             height: 15,
             decoration: const BoxDecoration(
-              color: Colors.red,
+              color: Color(0xFFaa1c1d),
               shape: BoxShape.circle,
             ),
           ),
           const SizedBox(width: 3),
           Expanded(
             child: Text(
-              text,
-              style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+              text.toUpperCase(),
+              style: TextStyle(fontSize: sizefont, fontWeight: FontWeight.bold),
             ),
           ),
         ],
