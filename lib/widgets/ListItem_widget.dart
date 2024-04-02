@@ -3,8 +3,9 @@ import 'package:flutter/material.dart';
 class ListItem extends StatelessWidget {
   final String text;
   final double sizefont;
+  final Color colores;
 
-  const ListItem({super.key, required this.text, required this.sizefont});
+  const ListItem({super.key, required this.text, required this.sizefont, required this.colores});
 
   @override
   Widget build(BuildContext context) {
@@ -16,8 +17,8 @@ class ListItem extends StatelessWidget {
           Container(
             width: 15,
             height: 15,
-            decoration: const BoxDecoration(
-              color: Color(0xFFaa1c1d),
+            decoration: BoxDecoration(
+              color: colores,
               shape: BoxShape.circle,
             ),
           ),
