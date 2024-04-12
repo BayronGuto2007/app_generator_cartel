@@ -10,6 +10,7 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_colorpicker: ^1.0.3
+  flutter_launcher_icons: ^0.13.1
   image_gallery_saver: ^2.0.3
   image_picker: ^1.0.7
 
@@ -18,7 +19,21 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
 
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon/pets.jpg"
+
 flutter:
   uses-material-design: true
   assets:
-    - assets/dog.png
+    - assets/imgs/dog.png
+  
+  fonts:
+    - family: Lato
+      fonts:
+        - assets: assets/fonts/Lato-Black.ttf
+        - assets: assets/fonts/Lato-Italic.ttf
+        - assets: assets/fonts/Lato-Bold.ttf
+          style: Bold
+
